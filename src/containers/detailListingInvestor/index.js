@@ -7,8 +7,11 @@ import SupportDocumentation from '../../components/SupportDocumentation'
 import DeveloperProfile from '../../components/DeveloperProfile'
 import LandProfile from '../../components/LandProfile'
 import FormPrepare from './FormPrepare/'
-import image from '../../images/image3.png'
 import styles from './index.module.scss'
+import image from '../../images/image.png'
+import image2 from '../../images/image2.png'
+import image3 from '../../images/image3.png'
+import image4 from '../../images/image4.png'
 
 const HeaderText = 'Barmedman, Southern New South Wales'
 const arrayText = [
@@ -99,11 +102,16 @@ const DetailListing = props => (
     </div>
 
     <div className={styles.contentWrapper}>
-      <Header haveHeader={true} headerText={HeaderText} list={arrayText} />
-      <OverviewDetail contentLeft={<FormPrepare />} images={[image, image]} />
-      <DeveloperProfile data={developerProfileData} />
-      <LandProfile data={landProfileData} />
-      <SupportDocumentation editable={false} />
+      <div className={styles.contentInner}>
+        <Header haveHeader={true} headerText={HeaderText} list={arrayText} />
+        <OverviewDetail
+          contentLeft={<FormPrepare />}
+          images={[image, image2, image3, image4]}
+        />
+        <DeveloperProfile data={developerProfileData} />
+        <LandProfile data={landProfileData} />
+        <SupportDocumentation editable={false} />
+      </div>
     </div>
   </div>
 )

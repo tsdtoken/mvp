@@ -9,8 +9,11 @@ import CheckList from '../../components/CheckList'
 import ServiceProviders from '../../components/ServiceProviders'
 import FormPrepare from './FormPrepare/'
 import FormFinish from './FormFinish/'
-import image from '../../images/image.png'
 import styles from './index.module.scss'
+import image from '../../images/image.png'
+import image2 from '../../images/image2.png'
+import image3 from '../../images/image3.png'
+import image4 from '../../images/image4.png'
 
 const beforeBidData = [
   {
@@ -211,28 +214,30 @@ class DetailListing extends React.Component {
         </div>
 
         <div className={styles.contentWrapper}>
-          <Header
-            haveHeader
-            headerText={this.state.headerText}
-            list={
-              this.state.bid
-                ? this.state.finishHeader
-                : this.state.prepareHeader
-            }
-          />
-          <OverviewDetail
-            contentLeft={
-              this.state.bid ? <FormFinish /> : <FormPrepare bid={this.bid} />
-            }
-            images={[image, image]}
-          />
-          {this.state.bid && <CheckList />}
-          <ServiceProviders data={this.state.serviceProvidersData} />
-          {this.state.bid && (
-            <DeveloperProfile data={developerProfileData} edit />
-          )}
-          <LandProfile data={landProfileData} />
-          <SupportDocumentation editable={true} />
+          <div className={styles.contentInner}>
+            <Header
+              haveHeader
+              headerText={this.state.headerText}
+              list={
+                this.state.bid
+                  ? this.state.finishHeader
+                  : this.state.prepareHeader
+              }
+            />
+            <OverviewDetail
+              contentLeft={
+                this.state.bid ? <FormFinish /> : <FormPrepare bid={this.bid} />
+              }
+              images={[image, image2, image3, image4]}
+            />
+            {this.state.bid && <CheckList />}
+            <ServiceProviders data={this.state.serviceProvidersData} />
+            {this.state.bid && (
+              <DeveloperProfile data={developerProfileData} edit />
+            )}
+            <LandProfile data={landProfileData} />
+            <SupportDocumentation editable={true} />
+          </div>
         </div>
       </div>
     )

@@ -7,9 +7,12 @@ import BidHistoryDetail from '../../components/BidHistoryDetail'
 import SupportDocumentation from '../../components/SupportDocumentation'
 import LandProfile from '../../components/LandProfile'
 import FormPrepare from './FormPrepare/'
-import image from '../../images/image.png'
 import styles from './index.module.scss'
 import { push } from 'connected-react-router'
+import image from '../../images/image.png'
+import image2 from '../../images/image2.png'
+import image3 from '../../images/image3.png'
+import image4 from '../../images/image4.png'
 
 const HeaderText = 'Balranald, Southern New South Wales'
 const arrayText = [
@@ -68,14 +71,16 @@ const DetailListing = props => (
     </div>
 
     <div className={styles.contentWrapper}>
-      <Header haveHeader={true} headerText={HeaderText} list={arrayText} />
-      <OverviewDetail
-        contentLeft={<FormPrepare goBack={props.goBack} />}
-        images={[image, image]}
-      />
-      <BidHistoryDetail />
-      <LandProfile data={landProfileData} edit showHideRow />
-      <SupportDocumentation editable={true} canDelete />
+      <div className={styles.contentInner}>
+        <Header haveHeader={true} headerText={HeaderText} list={arrayText} />
+        <OverviewDetail
+          contentLeft={<FormPrepare goBack={props.goBack} />}
+          images={[image, image2, image3, image4]}
+        />
+        <BidHistoryDetail />
+        <LandProfile data={landProfileData} edit showHideRow />
+        <SupportDocumentation editable={true} canDelete />
+      </div>
     </div>
   </div>
 )
