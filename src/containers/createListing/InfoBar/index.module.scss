@@ -1,0 +1,19 @@
+.informationWrapper {
+  background-color: #ffffff;
+  border: 1px solid #C0C2CC;
+  position: absolute;
+  z-index: 6;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -0);
+  p {
+    margin: 0;
+    padding: 12px 10px;
+  }
+  span {
+    margin-right: 5px;
+  }
+  .fixWidth {
+    width: 700px;
+  }
+}

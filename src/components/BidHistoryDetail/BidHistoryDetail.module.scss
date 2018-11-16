@@ -1,0 +1,91 @@
+.bidHistory {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    font-family: 'Roboto', 'Trebuchet MS', sans-serif;
+    border: 1px solid #EEE;
+    h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    ul {
+        padding: 0;
+        margin-bottom: 30px;
+        li {
+            list-style-type: none;
+            min-height: 40px;
+            border: 1px solid #C0C2CC;
+            border-bottom-color: transparent; 
+            padding-left: 15px;
+            div {
+                display: inline-block;
+                line-height: 40px;
+            }
+            .time {
+                width: 20%;
+                color: #8A8D99;
+            }
+            .bidded,
+            .percentLastBid {
+                width: 15%
+            }
+            .developerName {
+                width: 25%
+            }
+            .action {
+                width: 25%;
+                text-align: right;
+                color: #3B8BE7;
+                .arrowIcon {
+                    color: #3B8BE7;
+                    margin: 0 16px;
+                }
+            }
+            &.lastRow {
+                border-bottom: 1px solid #C0C2CC;
+            }
+        }
+    } 
+    .bidHistoryHeader {
+        border: none;
+        font-size: 13px;
+        color: #8A8D99;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-left: 15px;
+        margin-top: 30px;
+        div {
+            display: inline-block;
+            line-height: 40px;
+        }
+        .time {
+            width: 20%
+        }
+        .bidded,
+        .percentLastBid {
+            width: 15%
+        }
+        .developerName {
+            width: 25%
+        }
+        .action {
+            width: 25%;
+            text-align: right;
+            padding-right: 40px;
+        }
+    }
+    .viewMoreBid {
+        background-color: #fff;
+        cursor: pointer;
+        width: 300px;
+        border: 1px solid #3B8BE7;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 4px;
+        color: #3B8BE7;
+        padding: 10px 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

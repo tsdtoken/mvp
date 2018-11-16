@@ -1,0 +1,71 @@
+.filterBar {
+  height: 100vh;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+}
+
+.contentSwitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80px;
+  font-size: 24px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  color: #8A8D99;
+
+  &:hover {
+    background-color: #F9F9F9;
+    color: #3B8BE7;
+  }
+}
+
+.activeContent {
+  background-color: #F9F9F9;
+  color: #3B8BE7;
+}
+
+.search {
+  border: 1px solid #eee;
+  position: relative;
+
+  .searchInput {
+    padding: 20px 15px;
+    width: 100%;
+    border: none;
+
+    &:not(:focus),
+    &:focus {
+      font-style:italic;
+    }
+  }
+
+  .searchIcon {
+    position: absolute;
+    right: 14px;
+    top: 15px;
+    font-size: 24px;
+    color: #3B8BE7;
+  }
+}
+
+.filterBy {
+  padding: 20px 15px;
+  color: #8A8D99;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.amountInput {
+  width: 100%;
+  padding: 10px 5px;
+  border:  1px solid #C0C2CC;
+}
+
+.amountLabel {
+  color: #8A8D99;
+}

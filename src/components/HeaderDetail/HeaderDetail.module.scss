@@ -1,0 +1,49 @@
+.header {
+    margin-bottom: 20px;
+}
+
+.headerText {
+    line-height: 33px;
+    font-size: 33px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.listWrapper {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.listContent {
+    padding-left: 30px;
+    cursor: pointer;
+    &:hover {
+        .line {
+            border-bottom: 2px solid #3B8BE7;
+        }
+    }
+    .line {
+        padding-top: 5px;
+        border-bottom: 2px solid #C0C2CC;
+    }
+    .active {
+        padding-top: 5px;
+        border-bottom: 2px solid #3B8BE7;
+    }
+}
+
+.listContent:nth-child(1) {
+    padding-left: 0;
+}
+
+.textContent {
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #8A8D99;
+    text-transform: uppercase;
+    padding: 5px;
+}

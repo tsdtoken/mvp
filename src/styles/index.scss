@@ -1,0 +1,26 @@
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'react-tabs/style/react-tabs.scss';
+@import '~rc-slider/assets/index.css';
+@import '~react-dates/lib/css/_datepicker.css';
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+// Customized slick slider
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import './customized-slick.scss';
+
+// Customized react dates components
+@import './react_dates_overrides.scss'

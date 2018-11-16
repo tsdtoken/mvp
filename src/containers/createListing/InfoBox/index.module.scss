@@ -1,0 +1,124 @@
+.infoboxWrapper {
+  position: absolute;
+  top:100px;
+  right: 5%;
+  background-color: #fff;
+  z-index: 6;
+  padding: 30px 20px 0;
+  min-width: 480px;
+  max-width: 480px;
+  .toggleIcon {
+    color : #3B8BE7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  textarea {
+    text-indent: 10px;
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+    font-style: italic;
+    padding: 10px;
+  }
+  .uploadWrapper {
+    border: 1px solid #C0C2CC;
+    overflow: hidden;
+    position: relative;
+    .uploadBtn {
+      width: 100%;
+      height: 40px;
+    }
+    span {
+      height: 40px;
+      display: inline-block;
+      padding-top: 6px;
+      &.fileIcon {
+        font-size: 18px;
+        color: #3B8BE7;
+        float: left;
+        margin: auto 5px;
+      }
+      &.trashIcon {
+        font-size: 18px;
+        color: #F26638;
+        float: right;
+        margin: auto 5px;
+      }
+    }
+  }
+  
+  .uploadImg {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    color : #8A8D99;
+    border: 1px solid #EEEEEE;
+    svg {
+      position: absolute;
+      top: 37px;
+      left: 37px;
+      z-index: 7;
+    }
+  }
+  .row {
+    margin-bottom: 5px;
+    .col {
+      float: left;
+      position: relative;
+      &.uploadCell {
+        position: relative;
+        input {
+          &[type=file] {
+            opacity: 0;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            z-index: 7;
+            top:0;
+            left: 0;
+          }
+        }
+      }
+      .trashIcon {
+        display: none;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        padding: 5px;
+        z-index: 7;
+        top: 5px;
+        left: 5px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        svg {
+          position: absolute;
+          top: 37px;
+          left: 37px;
+          z-index: 7;
+          display: none;
+        }
+      }
+      &:hover {
+        .trashIcon {
+          display: block;
+          svg {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title {
+  line-height: normal;
+  font-size: 16px;
+  color: #8A8D99;
+}
+
+.textIcon {
+  padding-right: 5px;
+}

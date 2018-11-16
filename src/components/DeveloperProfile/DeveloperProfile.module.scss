@@ -1,0 +1,45 @@
+.developerProfile {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #EEE;
+  background-color: #fff;
+  padding: 20px;
+  color: #1E2739;
+}
+
+.editButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 1px solid #3B8BE7;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3B8BE7;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.companyImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamTitle {
+  font-size: 13px;
+  color: #8A8D99;
+  text-transform: uppercase;
+}
+
+.dev {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.devName {
+  margin-bottom: 0;
+}

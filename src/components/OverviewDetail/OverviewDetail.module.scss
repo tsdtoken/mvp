@@ -1,0 +1,17 @@
+.overview {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.contentLeft {
+  width: 360px;
+  border: 1px solid #eee;
+  padding: 15px;
+}
+
+.contentRight {
+  width: calc(100% - 360px);
+}

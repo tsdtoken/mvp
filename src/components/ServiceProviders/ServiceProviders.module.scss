@@ -1,0 +1,80 @@
+.serviceProviders {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    font-family: 'Roboto', 'Trebuchet MS', sans-serif;
+    border: 1px solid #EEE;
+    h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .subTitle {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+            min-height: 40px;
+            border: 1px solid #C0C2CC;
+            border-bottom-color: transparent; 
+            padding-left: 15px;
+            div {
+                display: inline-block;
+                line-height: 40px;
+            }
+            .serviceType,
+            .contractorName,
+            .costEstimate,
+            .timeEstimate,
+            .when {
+                width: 16%
+            }
+            .action {
+                width: 20%;
+                text-align: right;
+                color: #3B8BE7;
+                .arrowIcon {
+                    color: #3B8BE7;
+                    margin: 0 16px;
+                }
+            }
+            .status {
+                width: 20%;
+                padding-right: 40px;
+                text-align: right;
+            }
+        }
+    } 
+    .serviceProviderHeader {
+        border: none;
+        font-size: 13px;
+        color: #8A8D99;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-left: 15px;
+        margin-top: 30px;
+        div {
+            display: inline-block;
+            line-height: 40px;
+        }
+        .serviceType,
+        .contractorName,
+        .costEstimate,
+        .timeEstimate,
+        .when {
+            width: 16%;
+        }
+        .action {
+            width: 20%;
+            text-align: right;
+            padding-right: 40px;
+        }
+    }
+    .serviceProviderFooter {
+        background-color: #EEEEEE;
+        border-bottom: 1px solid #C0C2CC;
+    }
+}

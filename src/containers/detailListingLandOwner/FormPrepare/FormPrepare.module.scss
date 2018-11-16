@@ -1,0 +1,76 @@
+.label {
+  font-size: 12px;
+  color: #8A8D99;
+  text-transform: uppercase;
+}
+
+.smallLabel {
+  font-size: 11px;
+  color: #8A8D99;
+}
+
+.auctionEndTime {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.bidInput {
+  border: 1px solid #C0C2CC;
+  padding: 20px;
+  width: 100%;
+  line-height: 18px;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.shortList {
+  font-size: 13px;
+  color: #3B8BE7;
+}
+
+.yourListing {
+  font-size: 13px;
+  color: #1E2739;
+}
+
+.outbidded {
+  font-size: 13px;
+  color: #F26638;
+}
+
+.sep {
+  border-color: #eee;
+  margin: 10px -15px 10px -15px;
+}
+
+.bidForm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bid,
+.sendMessage {
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bid {
+  background-color: #3B8BE7;
+  color: white;
+  border: 1px solid #3B8BE7;
+  margin-bottom: 5px;
+}
+
+.sendMessage {
+  background-color: white;
+  color: #3B8BE7;
+  border: 1px solid #3B8BE7;
+}

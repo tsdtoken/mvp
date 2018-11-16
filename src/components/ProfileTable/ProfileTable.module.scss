@@ -1,0 +1,67 @@
+.mainTable {
+  border: 1px solid #C0C2CC;
+
+  td {
+    border-color: #C0C2CC;
+  }
+
+  .rowTitle {
+    color: #8A8D99;
+  }
+}
+
+.listWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .listContent {
+    padding-left: 10px;
+    cursor: pointer;
+    &:hover {
+      .line {
+        border-bottom: 2px solid #3B8BE7;
+      }
+    }
+    .line {
+      padding-top: 5px;
+      border-bottom: 2px solid #C0C2CC;
+    }
+  }
+
+  .listContent:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .textContent {
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #8A8D99;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .active {
+    .line {
+      border-color: #3B8BE7;
+    }
+
+    .textContent {
+      color: #1E2739;
+    }
+  }
+}
+
+.showHideRow {
+  text-align: right;
+}
+
+.iconWrapper {
+  color: #3B8BE7;
+
+  .icon {
+    margin-left: 5px;
+  }
+}

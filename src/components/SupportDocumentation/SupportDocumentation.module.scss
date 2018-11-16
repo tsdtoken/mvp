@@ -1,0 +1,78 @@
+.supportDocumentation {
+    margin-bottom: 20px;
+    border: 1px solid #EEE;
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+}
+
+.headerText {
+    line-height: normal;
+    font-size: 24px;
+    color: #1E2739;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.contentWrapper {
+    display: flex;
+}
+
+.listWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #C0C2CC;
+    padding: 10px 20px;
+}
+
+.upload {
+    background: #FFFFFF;
+    border: 0.75px solid #3B8BE7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #3B8BE7;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filename {
+    line-height: normal;
+    font-size: 16px;
+    color: #1E2739;
+    padding-left: 10px;
+}
+
+.uploadBy {
+    line-height: normal;
+    font-size: 16px;
+    text-align: right;
+    color: #8A8D99;
+    padding-right: 10px;
+}
+
+.cardIcon {
+    font-size: 16px;
+    color: #3B8BE7;
+}
+
+.deleteIcon {
+    font-size: 16px;
+    text-align: right;
+    color: #F26638;
+    cursor: pointer;
+}
+
+.blueText {
+    color: #3B8BE7;
+    cursor: pointer;
+}

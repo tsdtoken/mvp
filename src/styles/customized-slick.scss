@@ -1,0 +1,73 @@
+/* Custom react-slick styles */
+
+/*  customize next prev button */
+.slick-next, .slick-prev {
+  width: 50px;
+  height: 50px;
+  border-top: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-radius: 3px;
+  transition: all 0.25s ease;
+}
+.slick-next {
+  right: 25px;
+  transform: translate(0, -50%) rotate(45deg)
+}
+
+.slick-prev {
+  z-index: 1;
+  left: 25px;
+  transform: translate(0, -50%) rotate(-135deg)
+}
+
+.slick-next:before, .slick-prev:before {
+  content: '';
+}
+
+.slick-next:hover {
+  border-color: #e5e5e5;
+  right: 23px;
+}
+
+.slick-prev:hover {
+  border-color: #e5e5e5;
+  left: 23px;
+}
+
+/* customize dots */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  transition: all 0.25s ease;
+  transform-origin: center;
+}
+
+.slick-dots li.slick-active button {
+  transform: scale(1.6);
+  background: #FFBB32;
+}
+
+.slick-dots li button:before {
+  content: '';
+}
+.slick-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/**
+ * Customized next/prev size
+ */
+.map-card-slick {
+  .slick-next, .slick-prev {
+    width: 15px;
+    height: 15px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+  }
+}

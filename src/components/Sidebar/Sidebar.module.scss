@@ -1,0 +1,35 @@
+.sidebar {
+  font-size: 24px;
+}
+
+.logoWrapper {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #3B8BE7;
+}
+
+.linkWrapper {
+  height: 80px;
+  border: 1px solid #eee;
+  color: #8A8D99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: #3B8BE7;
+    background-color: #F9F9F9;
+  }
+}
+
+.activeLink .linkWrapper {
+  color: #3B8BE7;
+  background-color: #F9F9F9;
+}
+
+.logo {
+  width: 19px;
+  display: block;
+}

@@ -1,0 +1,97 @@
+.mapCard {
+  background-color: white;
+  position: relative;
+  width: 330px;
+
+  &:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-top-color: white;
+    border-width: 30px;
+    margin-left: -30px;
+    border-top-width: 25px;
+  }
+}
+
+.cardIcon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.shortList{
+  font-size: 15px;
+  color: #3B8BE7;
+}
+
+.cardName {
+  color: #3B8BE7;
+
+  h3 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+.yourListing {
+  float: right;
+  font-size: 15px;
+  color: #1E2739;
+}
+
+.outbidded {
+  float: right;
+  font-size: 15px;
+  color: #F26638;
+}
+
+.remind {
+  float: right;
+  font-size: 15px;
+  color: #3B8BE7;
+}
+
+.priceInfo {
+  font-size: 17px;
+  color: #1E2739;
+}
+
+.auctionInfo {
+  font-size: 15px;
+  color: #9396a1;
+}
+
+.cardFooter {
+  margin-top: 35px;
+}
+
+.progress {
+  position: relative;
+  background-color: #2B2F7C;
+  height: 20px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.currentProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFBB32;
+  width: 91%;
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+}

@@ -1,0 +1,20 @@
+.detailListing {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebarWrapper {
+    width: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+}
+
+.contentWrapper {
+    width: calc(100% - 80px);
+    padding: 28px 40px;
+    background: #F9F9F9;
+    margin-left: 80px;
+}

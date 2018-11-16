@@ -1,0 +1,58 @@
+.welcomeContainer {
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    width: 588px;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Roboto', 'Trebuchet MS', sans-serif;
+    padding-bottom: 50px;
+    margin: 50px auto;
+    .welcomeTitle {
+        text-align: center;
+        font-size: 33px;
+        padding-top: 40px;
+    }
+    .welcomeSubTitle {
+        text-align: center;
+        font-size: 13px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: #3B8BE7;
+    }
+    .content {
+        padding: 0 15px;
+        .description {
+            text-align: center;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 0 15px;
+        }
+    }
+}
+
+.defaultButton {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    background-color: #3B8BE7;
+    color: #fff;
+    width: 100%;
+    line-height: 64px;
+    margin: 20px 0 15px 0;
+    &:hover{
+        background-color: #2f6fb8;
+        color: #fff;
+        text-decoration: none;
+    }
+}
