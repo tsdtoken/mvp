@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../images/logo-text.png'
+import logo from '../../images/TSD-logo-white-small.svg'
 import styles from './Home.module.scss'
 
 const Home = () => (

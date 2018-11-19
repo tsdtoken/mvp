@@ -16,6 +16,13 @@ const Map = props => (
         left: '22%'
       }}>
       <MapCard
+        title={
+          <span>
+            Balranald
+            <br />
+            Southern New South Wales
+          </span>
+        }
         goToDetail={props.goToDetailLandOwner}
         images={[image, image]}
         priceInfo={
@@ -43,6 +50,13 @@ const Map = props => (
         left: '60%'
       }}>
       <MapCard
+        title={
+          <span>
+            Barmedman
+            <br />
+            Southern New South Wales
+          </span>
+        }
         goToDetail={props.goToDetailInvestor}
         images={[image3, image3]}
         progress

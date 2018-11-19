@@ -29,11 +29,13 @@ const ListView = props => (
     <div className={styles.listWrapper}>
       <div className={styles.text}>Showing 500 results</div>
       <ListCard
+        title="Balranald, Southern New South Wales"
         yourListing={true}
         rightContent="listingDetail"
         goToDetail={props.goToDetailLandOwner}
       />
       <ListCard
+        title="Barmedman, Southern New South Wales"
         halfWidth={true}
         rightContent="fundsRaised"
         goToDetail={props.goToDetailInvestor}

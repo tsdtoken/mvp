@@ -30,13 +30,16 @@ const ContentLeft = props => (
         : styles.contentLeft
     }>
     <div className={styles.title} onClick={props.goToDetail}>
-      Barmedman, Southern New South Wales
+      {props.title}
     </div>
     <div className={styles.description}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas,
-      orci vel vehicula vulputate, orci tellus fermentum elit, sit amet ornare
-      arcu magna nec lectus. Suspendisse bibendum felis dui, et pharetra velit
-      vulputate et. Ut vitae orci massa...
+      We are pleased to offer for sale this exceptional property which
+      represents a significant land holding in the heart of central NSW. The
+      property is situated on the Newell Highway. There is a total land area of
+      1000 hectares.
+      <br />
+      The zoning allows for solar and/or energy storage facilities close to grid
+      connection that has capacity.
     </div>
     <div className={styles.addToShortlist}>
       <FontAwesomeIcon icon={faStar} fixedWidth />
@@ -123,13 +126,7 @@ const ListCard = props => (
       </div>
     </Slider>
     <div className={styles.content}>
-      <ContentLeft
-        goToDetail={props.goToDetail}
-        yourListing={props.yourListing}
-        outbidded={props.outbidded}
-        halfWidth={props.halfWidth}
-        remind={props.remind}
-      />
+      <ContentLeft {...props} />
       <ContentRight rightContent={props.rightContent} />
     </div>
   </div>

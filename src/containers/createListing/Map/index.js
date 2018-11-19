@@ -9,14 +9,6 @@ import styles from './index.module.scss'
  * Initial status CREATE_LISTING_STEPS.S01_SHOW_MAP
  */
 const CustomMap = props => {
-  const updateStatus = () => {
-    if (props.status === CREATE_LISTING_STEPS.S01_SHOW_MAP) {
-      props.selectParcelsData({
-        status: CREATE_LISTING_STEPS.S02_SELECT_PARCEL
-      })
-    }
-  }
-
   const getMapImg = () => {
     var _src = require('../../../images/map-step-01.png'),
       _status = props.status
@@ -38,7 +30,6 @@ const CustomMap = props => {
       style={{
         backgroundImage: 'url(' + getMapImg() + ')'
       }}
-      onClick={updateStatus.bind(this)}
     />
   )
 }

@@ -12,18 +12,23 @@ const LandProfile = props => (
       <div className="col-md-7 pt-3">
         <div className={styles.landDescriptionTitle}>Description</div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          pretium vehicula metus, vel dictum augue accumsan consequat. Maecenas
-          feugiat in dui eget dictum. Donec vitae erat massa. Etiam ultricies
-          volutpat magna, ut tristique augue auctor at. Nunc cursus leo eget
-          nunc tristique hendrerit. Proin interdum maximus facilisis. Morbi nec
-          velit nec enim feugiat ornare. Quisque vitae nulla pretium quam
-          commodo euismod nec ut magna. Suspendisse egestas pharetra turpis id
-          pulvinar. Sed volutpat faucibus eros sit amet cursus. Sed a ex vitae
-          nisl maximus fringilla. In nec dapibus leo. Vivamus iaculis
-          sollicitudin lorem, nec sollicitudin justo imperdiet vel. Praesent et
-          justo quis sem consectetur gravida. Nullam tincidunt mauris pulvinar,
-          tempor leo ut, faucibus dui. Aliquam a mauris quam.
+          <p>
+            We are pleased to offer for sale this exceptional property which
+            represents a significant land holding in the heart of central NSW.
+          </p>
+          <p>
+            The property is situated on the Newell Highway. There is a total
+            land area of 1000 hectares.
+          </p>
+          <p>
+            The zoning allows for solar and/or energy storage facilities close
+            to grid connection that has capacity.
+          </p>
+          <p>
+            The opportunities as we see it are purchased by a developer ready to
+            proceed with a developement or a developer looking to land bank the
+            site,{' '}
+          </p>
         </div>
       </div>
       <div className="col-md-5">

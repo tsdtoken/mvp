@@ -2,69 +2,78 @@ import React from 'react'
 import { selectParcelsData } from '../../../modules/createListing'
 import { connect } from 'react-redux'
 import { CREATE_LISTING_STEPS } from '../../../constants'
-import globalStyles from '../index.module.scss'
 import styles from './index.module.scss'
 
 const InfoBar = props => {
   /**
    * Move to next step
    */
-  const updateStatus = () => {
-    var _status = props.status
-    if (_status === CREATE_LISTING_STEPS.S01_SHOW_MAP) {
-      _status = CREATE_LISTING_STEPS.S02_SELECT_PARCEL
-    } else if (_status === CREATE_LISTING_STEPS.S02_SELECT_PARCEL) {
-      _status = CREATE_LISTING_STEPS.S03_ADJUST_PARCEL
-    } else if (_status === CREATE_LISTING_STEPS.S03_ADJUST_PARCEL) {
-      _status = CREATE_LISTING_STEPS.S04_CONFIRM_PARCEL
-    }
+  const updateStatus = status => {
     props.selectParcelsData({
-      status: _status
+      status
     })
   }
 
   const InforRender = () => {
     var _status = props.status
     if (_status === CREATE_LISTING_STEPS.S01_SHOW_MAP) {
-      return <p>Select the parcel(s) of land that is yours</p>
+      return (
+        <div>
+          <p>Select the parcel(s) of land that is yours</p>
+          <button
+            onClick={updateStatus.bind(
+              this,
+              CREATE_LISTING_STEPS.S02_SELECT_PARCEL
+            )}
+            className={styles.primaryButton}>
+            Next
+          </button>
+        </div>
+      )
     } else if (_status === CREATE_LISTING_STEPS.S02_SELECT_PARCEL) {
       return (
-        <p>
-          <span>Select the parcel(s) of land that is yours</span>
+        <div>
+          <p>Select the parcel(s) of land that is yours</p>
           <button
-            className={globalStyles.button + ' ' + globalStyles.buttonBlue}
-            onClick={updateStatus.bind(this)}>
-            Done
+            className={styles.primaryButton}
+            onClick={updateStatus.bind(
+              this,
+              CREATE_LISTING_STEPS.S03_ADJUST_PARCEL
+            )}>
+            Next
           </button>
-        </p>
+        </div>
       )
     } else if (_status === CREATE_LISTING_STEPS.S03_ADJUST_PARCEL) {
       return (
-        <p className={styles.fixWidth}>
-          <span>
+        <div>
+          <p>
             Use the points to adjust and confirm portion of land you want to
             list
-          </span>
+          </p>
           <button
-            className={
-              globalStyles.button + ' ' + globalStyles.buttonBlue + ' ml-2'
-            }
-            onClick={updateStatus.bind(this)}>
-            Done
+            className={`${styles.primaryButton} mb-3`}
+            onClick={updateStatus.bind(
+              this,
+              CREATE_LISTING_STEPS.S04_CONFIRM_PARCEL
+            )}>
+            Next
           </button>
-          &nbsp;
           <button
-            className={
-              globalStyles.button + ' ' + globalStyles.buttonWhite + ' ml-2'
-            }>
-            Undo last point
+            className={styles.secondaryButton}
+            onClick={updateStatus.bind(
+              this,
+              CREATE_LISTING_STEPS.S01_SHOW_MAP
+            )}>
+            Cancel
           </button>
-        </p>
+        </div>
       )
     } else {
       return null
     }
   }
+
   return (
     <div className={styles.informationWrapper}>
       <InforRender />

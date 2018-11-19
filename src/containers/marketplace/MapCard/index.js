@@ -35,11 +35,7 @@ const MapCard = props => (
           e.preventDefault()
           props.goToDetail()
         }}>
-        <h3>
-          Balranald
-          <br />
-          Southern New South Wales
-        </h3>
+        <h3>{props.title}</h3>
       </a>
 
       {props.progress && (

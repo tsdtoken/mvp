@@ -14,19 +14,24 @@ const DeveloperProfile = props => (
       <div className={`col-md-2 ${styles.companyImageWrapper}`}>
         <img src={devCompany} alt="dev company" />
       </div>
-      <div className="col-md-5 pt-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        pretium vehicula metus, vel dictum augue accumsan consequat. Maecenas
-        feugiat in dui eget dictum. Donec vitae erat massa. Etiam ultricies
-        volutpat magna, ut tristique augue auctor at. Nunc cursus leo eget nunc
-        tristique hendrerit. Proin interdum maximus facilisis. Morbi nec velit
-        nec enim feugiat ornare. Quisque vitae nulla pretium quam commodo
-        euismod nec ut magna. Suspendisse egestas pharetra turpis id pulvinar.
-        Sed volutpat faucibus eros sit amet cursus. Sed a ex vitae nisl maximus
-        fringilla. In nec dapibus leo. Vivamus iaculis sollicitudin lorem, nec
-        sollicitudin justo imperdiet vel. Praesent et justo quis sem consectetur
-        gravida. Nullam tincidunt mauris pulvinar, tempor leo ut, faucibus dui.
-        Aliquam a mauris quam.
+      <div className="col-md-5">
+        <p>
+          Energy Matters sources only products that have been tested in
+          Australia’s harsh conditions.
+        </p>
+
+        <p>
+          With expertise in both grid connect and off grid power, Energy Matters
+          is able to provide flexible clean energy solutions to fit almost all
+          needs.
+        </p>
+
+        <p>
+          Energy Matters is proud of its commitment to ongoing innovation and
+          product development. Its SunLock solar mounting system, designed and
+          manufactured locally, has been used to mount over 75MW of solar panels
+          to roofs across the nation.
+        </p>
       </div>
       <div className="col-md-5">
         <ProfileTable data={props.data} />
@@ -43,14 +48,14 @@ const DeveloperProfile = props => (
       <div className="col-md-10">
         <div className={styles.dev}>
           <h4 className={styles.devName}>Amanda Smith</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          pretium vehicula metus, vel dictum augue accumsan consequat. Maecenas
-          feugiat in dui eget dictum. Donec vitae erat massa. Etiam ultricies
-          volutpat magna, ut tristique augue auctor at. Nunc cursus leo eget
-          nunc tristique hendrerit. Proin interdum maximus facilisis. Morbi nec
-          velit nec enim feugiat ornare. Quisque vitae nulla pretium quam
-          commodo euismod nec ut magna. Suspendisse egestas pharetra turpis id
-          pulvinar.
+          Amanda became the company’s Managing Director in late 2015. Coming
+          from an engineering and commerce background, Amanda has amassed more
+          than 8 years of experience in solar and 15 years in new technology and
+          start-ups.
+          <br />
+          With previous working experience at one of the world’s largest solar
+          panel manufacturers, Amanda has led teams that have delivered some of
+          the largest and most iconic solar projects in Australia.
         </div>
       </div>
     </div>
@@ -63,14 +68,11 @@ const DeveloperProfile = props => (
       <div className="col-md-10">
         <div className={styles.dev}>
           <h4 className={styles.devName}>Craig Stone</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          pretium vehicula metus, vel dictum augue accumsan consequat. Maecenas
-          feugiat in dui eget dictum. Donec vitae erat massa. Etiam ultricies
-          volutpat magna, ut tristique augue auctor at. Nunc cursus leo eget
-          nunc tristique hendrerit. Proin interdum maximus facilisis. Morbi nec
-          velit nec enim feugiat ornare. Quisque vitae nulla pretium quam
-          commodo euismod nec ut magna. Suspendisse egestas pharetra turpis id
-          pulvinar.
+          Craig had worked in direct sales for more than 20 years before joining
+          Energy Matters. Throughout his career, he has managed call centers and
+          face-to-face sales teams in the UK and Australia. This has seen him
+          work with leading brands across a wide range of industries; including
+          finance, insurance, utilities, telecommunications and media.
         </div>
       </div>
     </div>

@@ -49,3 +49,5 @@ firebase deploy
 ```
 
 You can find more information in here: https://firebase.google.com/docs/cli/
+
+To see instructions on how to setup hosting in Firebase, please watch the video located in [mvp-instructions.mp4]
