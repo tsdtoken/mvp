@@ -25,16 +25,18 @@ const CreateListing = props => (
     </div>
 
     <div className={styles.contentWrapper}>
-      <PageNav status={props.status} />
-      <div className={styles.mapWrapper}>
-        <SearchBox />
-        <InfoBar status={props.status} />
-        <CustomMap />
-        <InfoBox
-          reset={() => {
-            resetState(props)
-          }}
-        />
+      <div className={styles.fixWidth}>
+        <PageNav status={props.status} />
+        <div className={styles.mapWrapper}>
+          <SearchBox />
+          <InfoBar status={props.status} />
+          <CustomMap />
+          <InfoBox
+            reset={() => {
+              resetState(props)
+            }}
+          />
+        </div>
       </div>
     </div>
   </div>

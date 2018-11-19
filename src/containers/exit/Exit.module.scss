@@ -1,21 +1,18 @@
 .exit {
     background-image: url(../../images/background.png);
     background-size: cover;
-    background-position: 0 -269px;
     background-repeat: no-repeat;
     padding-bottom: 70px;
-}
-
-@media only screen and (max-width: 1440px) {
-    .exit {
-        background-position: -50px -180px;
-    }
+    min-height: 100vh;
 }
 
 .logo {
     padding-top: 50px;
     margin-bottom: 20px;
     text-align: center;
+    img {
+        width: 246px;
+    }
 }
 
 .endContainer {
